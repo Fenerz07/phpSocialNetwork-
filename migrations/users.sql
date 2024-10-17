@@ -1,0 +1,20 @@
+CREATE DATABASE my_database;
+
+USE my_database;
+
+CREATE TABLE `users` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`username` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`email` VARCHAR(100) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`password` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`photo` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`created_at` DATETIME NULL DEFAULT NULL,
+	`last_connection` DATETIME NULL DEFAULT NULL,
+	`role_admin` TINYINT(1) NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='utf8mb4_0900_ai_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=8
+;
+

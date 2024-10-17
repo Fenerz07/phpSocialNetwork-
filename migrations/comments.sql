@@ -1,0 +1,12 @@
+CREATE TABLE `comments` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`article_id` INT(10) NOT NULL,
+	`user_id` INT(10) NOT NULL,
+	`content` TEXT NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='utf8mb4_0900_ai_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=6
+;
