@@ -34,6 +34,7 @@ $isAdmin = isset($_SESSION['admin']) && $_SESSION['admin'] === true;
 ?>
 <link rel="stylesheet" href="Css/styles.css">
 <h1>Profil de <?= htmlspecialchars($user->getUsername() ?? 'Inconnu') ?></h1>
+<img src="<?= htmlspecialchars($user->getMediaObject()) ?>" alt="Photo de profil" width="100">
 
 <?php if ($isAdmin): ?>
     <p><strong>Email :</strong> <?= htmlspecialchars($user->getMail() ?? 'Inconnu') ?></p>
