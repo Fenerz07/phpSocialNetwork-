@@ -21,7 +21,7 @@ Ce projet est une application web développée en PHP, inspirée d'Instagram. Il
 
 ## Installation
 
-- **git clone https://github.com/votre-utilisateur/votre-repo.git**
+- **git clone https://github.com/Fenerz07/phpSocialNetwork-**
 
 ## Utilisation
 **Inscription et Connexion**
